@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  
+</head>
+<style>
+/* Styles for Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Styles for Skill Sections */
+.technical-skills,
+.soft-skills {
+  margin-bottom: 40px;
+}
+
+.technical-skills h2,
+.soft-skills h2 {
+  margin-bottom: 20px;
+}
+
+.skills-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-item {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.skills-item h3 {
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-details {
+    flex-wrap: wrap;
+  }
+
+  .skills-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+font-size: 30px;
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 70px;
+width:100px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hamburger Menu Styles */
+.nav-toggle-label {
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+</style>
+<body>
+<nav>
+  <div class="logo">
+    <a href="#"><img src="logo1.png" alt="Logo"></a>
+  </div>
+  <input type="checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skill.html">Skills</a></li>
+    <li><a href="project.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<header>
+  <h1>Skill Page Heading</h1>
+</header>
+
+<section class="technical-skills">
+  <h2>Technical Skills</h2>
+  <div class="skills-details">
+    <div class="skills-item">
+      <h3>Languages</h3>
+      <p>JavaScript, HTML, CSS,Python</p>
+    </div>
+    <div class="skills-item">
+      <h3>Skills Experience</h3>
+      <p>0 years</p>
+    </div>
+    <div class="skills-item">
+      <h3>Skills Certifications</h3>
+      <p>Cloud Essential Certification</p>
+ <p> Java programming Certification</p>
+    </div>
+  </div>
+</section>
+
+<section class="soft-skills">
+  <h2>Soft Skills</h2>
+  <div class="skills-details">
+    <div class="skills-item">
+      <h3>Communication Skill</h3>
+      <p>Excellent communication skills</p>
+    </div>
+    <div class="skills-item">
+      <h3>Skills Experience</h3>
+      <p>2years</p>
+    </div>
+    <div class="skills-item">
+      <h3>Skills Certifications</h3>
+      <p>Effective Communication Certification</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

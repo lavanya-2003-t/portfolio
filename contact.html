@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Information</title>
+ 
+</head>
+<style>
+body
+{
+color: sliver;
+}/* Styles for Contact Information Section */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-item h3 {
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+font-size: 35px;
+}
+
+.logo img {
+  height: 70px;
+width:100px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hamburger Menu Styles */
+.nav-toggle-label {
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: gray;
+  margin-bottom: 5px;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+</style>
+<body>
+<nav>
+  <div class="logo">
+    <a href="#"><img src="logo1.png" alt="Logo"></a>
+  </div>
+  <input type="checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skill.html">Skills</a></li>
+    <li><a href="project.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<section class="contact-info">
+  <div class="info-item">
+    <h3>Email</h3>
+    <p>example@example.com</p>
+  </div>
+
+  <div class="info-item">
+    <h3>Phone No</h3>
+    <p>+1234567890</p>
+  </div>
+
+  <div class="info-item">
+    <h3>Address</h3>
+    <p>123 Street Name, City, Country</p>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

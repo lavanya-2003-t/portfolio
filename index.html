@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  
+</head>
+<style>
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+background-image:url("img3.jpg");
+background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: 1400px 600px;
+overflow:hidden;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+text-shadow: 2px 2px 5px red;
+  color: gold;
+  font-size: 35px;
+}
+
+.logo img {
+  height: 70px;
+width:100px;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hamburger Menu Styles */
+.nav-toggle-label {
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+}
+
+.nav-toggle-label span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+/* Banner Styles */
+.banner {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+</style>
+<body>
+
+<nav>
+  <div class="logo">
+    <a href="#"><img src="logo1.png" alt="Logo"></a>
+  </div>
+  <input type="checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span></span>
+  </label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skill.html">Skills</a></li>
+    <li><a href="project.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="banner">
+  
+  <a href="#" class="btn-download">Download Resume</a>
+</section>
+
+</body>
+</html>
